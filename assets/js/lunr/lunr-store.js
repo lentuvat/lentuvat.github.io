@@ -1,7 +1,19 @@
 var store = [{
-        "title": "Ensi kauden varauksia vastaan otetaan",
-        "excerpt":"Otamme vastaan varauksia ensi kaudelle. Pidämme mökit kiinni nyt talvikaudella ja avaamme jälleen keväällä 2023 toukokuun alussa.    ","categories": ["jekyll","update"],
+        "title": "Kesäkausi 2023 nyt varattavissa.",
+        "excerpt":"Nyt vielä hyvin vapaita viikkoja, vuokraa nyt rantamökki Kuhmosta Lentua järven rannalta!    ","categories": ["jekyll","update"],
         "tags": [],
-        "url": "/jekyll/update/suljettu/",
+        "url": "/jekyll/update/avattu/",
+        "teaser": null
+      },{
+        "title": "Kalastusluvat",
+        "excerpt":"Meidän kautta saat paikallisen kalastuskunnan kalastusluvat Lentualle sekä Nivan koskialueelle.    ","categories": ["jekyll","update"],
+        "tags": [],
+        "url": "/jekyll/update/kalastus/",
+        "teaser": null
+      },{
+        "title": "Metsästys",
+        "excerpt":"Pohjanmaa ja Kainuu alueen kanalinnustuslupia ovat ostettavissa eräluvat palvelussa 5.-9.6 alkaen. Meiltä myös luvat Timoniemen metsästysseuran alueelle.    ","categories": ["jekyll","update"],
+        "tags": [],
+        "url": "/jekyll/update/metsastys/",
         "teaser": null
       }]
