@@ -1,0 +1,1000 @@
+  897  cd ..
+  898  openssl req -new -config etc/server.conf -out certs/simple.org.csr -keyout certs/simple.org.key
+  899  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server.conf -out certs/simple.org.csr -keyout certs/simple.org.key
+  900  vi etc/server.conf 
+  901  ls
+  902  cd etc
+  903  ls
+  904  pwd
+  905  .s
+  906  ls
+  907  vi server2.conf
+  908  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server2.conf -out certs/simple.org.csr -keyout certs/simple.org.key
+  909  cd ..
+  910  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server2.conf -out certs/simple.org.csr -keyout certs/simple.org.key
+  911  ls
+  912  cd certs/
+  913  ls
+  914  rm simple.org.key 
+  915  pwd
+  916  cd ..
+  917  ls
+  918  cd etc
+  919  ls
+  920  vi server*
+  921  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server2.conf -out certs/simple.org.csr -keyout certs/simple.org.key
+  922  cd ..
+  923  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server2.conf -out certs/simple.org.csr -keyout certs/simple.org.key
+  924  pwd
+  925  CSR_NAME=pk
+  926  openssl genrsa -out  "$CSR_NAME".key 2048
+  927  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server2.conf -out certs/simple.org.csr -key pk.key 
+  928  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server2.conf -out certs/simple.org.csr -keyout pk2.key
+  929  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server2.conf -out certs/simple.org.csr -nodes -keyout pk2.key
+  930  ls
+  931  rm pk.key
+  932  rm pk2.key
+  933  vi etc/server.conf 
+  934  vi etc/server*
+  935  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server.conf -out certs/simple.org.csr -nodes -keyout certs/simple.key
+  936  vi etc/server.conf 
+  937  vi etc/server.conf etc/server2.conf 
+  938  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server.conf -out certs/simple.org.csr -nodes -keyout certs/simple.key
+  939  vi etc/server.conf etc/server2.conf 
+  940  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server.conf -out certs/simple.org.csr -nodes -keyout certs/simple.key
+  941  vi etc/server.conf etc/server2.conf 
+  942  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server.conf -out certs/simple.org.csr -nodes -keyout certs/simple.key
+  943  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server2.conf -out certs/simple.org.csr -nodes -keyout certs/simple.key
+  944  vi etc/server.conf 
+  945  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server2.conf -out certs/simple.org.csr -nodes -keyout certs/simple.key
+  946  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server.conf -out certs/simple.org.csr -nodes -keyout certs/simple.key
+  947  vi etc/server.conf 
+  948  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server.conf -out certs/simple.org.csr -nodes -keyout certs/simple.key
+  949  cd etc
+  950  vi server.conf 
+  951  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server.conf -out certs/simple.org.csr -nodes -keyout certs/simple.key
+  952  cd ..
+  953  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server.conf -out certs/simple.org.csr -nodes -keyout certs/simple.key
+  954  cd certs/
+  955  ls
+  956  ls -lrt
+  957  openssl CSR_NAME=simple.org
+  958  CSR_NAME="simple.org"
+  959  openssl req -text -noout -in "$CSR_NAME".csr
+  960  pwd
+  961  cd ..
+  962  vi etc/server.conf 
+  963  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server.conf -out certs/simple.org.csr -nodes -keyout certs/simple.key
+  964  pwd
+  965  ls
+  966  cd certs/
+  967  openssl req -text -noout -in "$CSR_NAME".csr
+  968  ls
+  969  cd ..
+  970  cd etc
+  971  ls
+  972  vi server.conf 
+  973  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server.conf -out certs/simple.org.csr -nodes -keyout certs/simple.key
+  974  cd ..
+  975  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server.conf -out certs/simple.org.csr -nodes -keyout certs/simple.key
+  976  vi etc/server.conf 
+  977  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server.conf -out certs/simple.org.csr -nodes -keyout certs/simple.key
+  978  cd certs/
+  979  ls -lrt
+  980  date
+  981  rm simple*
+  982  pwd
+  983  cd ..
+  984  ls
+  985  pwd
+  986  vi etc/server
+  987  vi etc/server.conf 
+  988  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server.conf -out certs/simple.org.csr -nodes -keyout certs/simple.key
+  989  openssl req -text -noout -in certs/"$CSR_NAME".csr
+  990  vi etc/server.conf 
+  991  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server.conf -out certs/simple.org.csr -nodes -keyout certs/simple.key
+  992  openssl req -text -noout -in certs/"$CSR_NAME".csr
+  993  vi etc/server.conf 
+  994  cd ca
+  995  ls
+  996  cd teco-eu-ca/
+  997  ls -lR
+  998  cd db/
+  999  ls
+ 1000  vi *
+ 1001  cd ..
+ 1002  cd .
+ 1003  ..
+ 1004  cd ..
+ 1005  cd root-ca/
+ 1006  ls
+ 1007  cd db
+ 1008  vi *
+ 1009  cd ..
+ 1010  ls
+ 1011  cd etc
+ 1012  ls
+ 1013  cd ..
+ 1014  cd etc
+ 1015  ls
+ 1016  vi *
+ 1017  grep signing *
+ 1018  cd ..
+ 1019  ls
+ 1020  cd ca
+ 1021  ls
+ 1022  pwd
+ 1023  cd teco-eu-ca/
+ 1024  ls-lR
+ 1025  ls -lR
+ 1026  cd db
+ 1027  ls
+ 1028  vi *
+ 1029  rm -rf *
+ 1030  cd ..
+ 1031  ls
+ 1032  ls -lR
+ 1033  pwd
+ 1034  cd .
+ 1035  cd ..
+ 1036  cd ca
+ 1037  cd teco-eu-ca/
+ 1038  ls
+ 1039  cd db
+ 1040  cp /dev/null teco-eu-ca.db¨
+ 1041  ls
+ 1042  rm teco-eu-ca.db
+ 1043  cp /dev/null teco-eu-ca.db
+ 1044  cp /dev/null teco-eu-ca.db.attr
+ 1045  echo 01 > teco-eu-ca.crt.srl
+ 1046  echo 01 > teco-eu-ca.crl.srl
+ 1047  cd ..
+ 1048  ls ca
+ 1049  openssl req -new -config etc/teco-eu-ca.conf -out ca/teco-eu-ca.csr -key ca/teco-eu-ca/private/teco-eu-ca.key 
+ 1050  openssl ca -config etc/root-ca.conf -in ca/teco-eu-ca.csr -out ca/teco-eu-ca.crt -extensions intermediate_ca_ext
+ 1051  cd ca
+ 1052  cd teco-eu-ca/
+ 1053  ls -lR
+ 1054  cd ..
+ 1055  cd root-ca/
+ 1056  ls
+ 1057  cat 03.pem 
+ 1058  ls
+ 1059  cd db/
+ 1060  ls
+ 1061  cat root-ca.crt.srl
+ 1062  cd ..
+ 1063  ls
+ 1064  cd certs/
+ 1065  ls
+ 1066  pwd
+ 1067  cd ..
+ 1068  ls certs/
+ 1069  rm certs/simple*
+ 1070  history
+ 1071  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server.conf -out certs/vio-tlab.csr -keyout certs/vio-tlab.key
+ 1072  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server.conf -out certs/vio-tlab.csr -node -keyout certs/vio-tlab.key
+ 1073  SAN=DNS:osapi.1-4.fi.tecolab.local openssl req -new -config etc/server.conf -out certs/vio-tlab.csr -nodes -keyout certs/vio-tlab.key
+ 1074  CSR_NAME=vio-tlab
+ 1075  history
+ 1076  openssl req -text -noout -in certs/"$CSR_NAME".csr
+ 1077  openssl ca -config etc/teco-eu-ca.conf -in certs/vio-tlab.csr -out certs/vio-tlab.crt -extensions server_ext
+ 1078  openssl req -text -noout -in certs/"$CSR_NAME".crt
+ 1079  openssl x509 -text -noout -in certs/"$CSR_NAME".crt
+ 1080  pwd
+ 1081  ls
+ 1082  vi README.md
+ 1083  SAN=DNS:osapi.1-4.fi.tecolab.online, DNS:osapi.1-4.fi.tecolab.local, DNS:keystone-api.openstack.svc.cluster.teco, IP Address:11.8.1.15, IP Address:11.8.2.10
+ 1084  openssl req -new -config etc/server.conf -out certs/vio-tlab.csr -keyout certs/vio-tlab.key
+ 1085  openssl req -text -noout -in certs/"$CSR_NAME".csr
+ 1086  SAN="DNS:osapi.1-4.fi.tecolab.online, DNS:osapi.1-4.fi.tecolab.local, DNS:keystone-api.openstack.svc.cluster.teco, IP Address:11.8.1.15, IP Address:11.8.2.10"
+ 1087  SAN="DNS:osapi.1-4.fi.tecolab.online, DNS:osapi.1-4.fi.tecolab.local, DNS:keystone-api.openstack.svc.cluster.teco, IP Address:11.8.1.15, IP Address:11.8.2.10" \
+ 1088  vi README.md 
+ 1089  SAN="DNS:osapi.1-4.fi.tecolab.online, DNS:osapi.1-4.fi.tecolab.local, DNS:keystone-api.openstack.svc.cluster.teco, IP Address:11.8.1.15, IP Address:11.8.2.10" openssl req -new -config etc/server.conf -out certs/vio-tlab.csr -keyout certs/vio-tlab.key -nodes
+ 1090  SAN=DNS:osapi.1-4.fi.tecolab.online, DNS:osapi.1-4.fi.tecolab.local, DNS:keystone-api.openstack.svc.cluster.teco, IP Address:11.8.1.15, IP Address:11.8.2.10 openssl req -new -config etc/server.conf -out certs/vio-tlab.csr -keyout certs/vio-tlab.key -nodes
+ 1091  vi README.md 
+ 1092  SAN=DNS:osapi.1-4.fi.tecolab.online openssl req -new -config etc/server.conf -out certs/vio-tlab.csr -keyout certs/vio-tlab.key -nodes
+ 1093  openssl req -text -noout -in certs/"$CSR_NAME".csr
+ 1094  SAN="DNS:osapi.1-4.fi.tecolab.online" openssl req -new -config etc/server.conf -out certs/vio-tlab.csr -keyout certs/vio-tlab.key -nodes
+ 1095  SAN="DNS:osapi.1-4.fi.tecolab.online, DNS:osapi.1-4.fi.tecolab.online2" openssl req -new -config etc/server.conf -out certs/vio-tlab.csr -keyout certs/vio-tlab.key -nodes
+ 1096  openssl req -text -noout -in certs/"$CSR_NAME".csr
+ 1097  SAN="DNS:osapi.1-4.fi.tecolab.online, DNS:osapi.1-4.fi.tecolab.online, IP=1.2.3.42" openssl req -new -config etc/server.conf -out certs/vio-tlab.csr -keyout certs/vio-tlab.key -nodes
+ 1098  vi README.md 
+ 1099  SAN="DNS:osapi.1-4.fi.tecolab.online, DNS:osapi.1-4.fi.tecolab.online, IP:1.2.3.42" openssl req -new -config etc/server.conf -out certs/vio-tlab.csr -keyout certs/vio-tlab.key -nodes
+ 1100  vi README.md 
+ 1101  SAN="DNS:osapi.1-4.fi.tecolab.online, DNS:osapi.1-4.fi.tecolab.local, DNS:keystone-api.openstack.svc.cluster.teco, IP:11.8.1.15, IP:11.8.2.10" openssl req -new -config etc/server.conf -out certs/vio-tlab.csr -keyout certs/vio-tlab.key -nodes
+ 1102  vi README.md 
+ 1103  openssl ca -config etc/teco-eu-ca.conf -in certs/tlab-vio.csr -out certs/tlab-vio.crt -extensions server_ext
+ 1104  vi README.md 
+ 1105  openssl ca -config etc/teco-eu-ca.conf -in certs/tlab-vio.csr -out certs/tlab-vio.crt -extensions server_ext
+ 1106  openssl ca -config etc/teco-eu-ca.conf -in certs/vio-tlab.csr -out certs/vio-tlab.crt -extensions server_ext
+ 1107  vi README.md 
+ 1108  cd certs/
+ 1109  ls
+ 1110  mv vio-tlab.csr tlab-vio.csr
+ 1111  mv vio-tlab.crt tlab-vio.crt
+ 1112  ls
+ 1113  pwd
+ 1114  cd etc
+ 1115  cd .
+ 1116  cd ..
+ 1117  cd etc
+ 1118  grep signing *
+ 1119  grep teco-eu *
+ 1120  pwd
+ 1121  ls
+ 1122  cd ..
+ 1123  ls
+ 1124  cd ca
+ 1125  ls
+ 1126  cd teco-eu-ca/
+ 1127  ls
+ 1128  cat 01.pem 
+ 1129  cat 02.pem 
+ 1130  cd ..
+ 1131  cd .
+ 1132  cd ..
+ 1133  ls
+ 1134  pwd
+ 1135  vi README.md 
+ 1136  cat README.md 
+ 1137  openssl ca -config etc/teco-eu-ca.conf -revoke ca/teco-eu-ca/02.pem -crl_reason superseded
+ 1138  vi README.md 
+ 1139  openssl ca -gencrl -config etc/teco-eu-ca.conf -out crl/teco-eu-ca.crl
+ 1140  cat crl/teco-eu-ca.crl
+ 1141  vi README
+ 1142  vi README.md 
+ 1143  pwd
+ 1144  cd etc
+ 1145  ls
+ 1146  vi client-auth.conf
+ 1147  vi client-auth.conf server.conf 
+ 1148  cd ..
+ 1149  ls -lR
+ 1150  pwd
+ 1151  ls -lR
+ 1152  pwd
+ 1153  ls
+ 1154  cd etc/
+ 1155  ls
+ 1156  rm server2.conf 
+ 1157  ls
+ 1158  vi README
+ 1159  vi README.
+ 1160  ls
+ 1161  cd ..
+ 1162  vi README.md 
+ 1163  pwd
+ 1164  ls
+ 1165  vim README.md 
+ 1166  vi README.md 
+ 1167  pwd
+ 1168  ls -lR
+ 1169  cd ca
+ 1170  cd teco-eu-ca/db
+ 1171  ls
+ 1172  ls *old
+ 1173  rm *old
+ 1174  cd ..
+ 1175  cd root-ca/
+ 1176  ls
+ 1177  cd db/
+ 1178  ls
+ 1179  rm *old
+ 1180  ls
+ 1181  cd ..
+ 1182  ls -lR
+ 1183  cat ./ca/teco-eu-ca/db/teco-eu-ca.db
+ 1184  pwd
+ 1185  file ca/root-ca/private/root-ca.key 
+ 1186  cat ca/root-ca/private/root-ca.key
+ 1187  ls -lR
+ 1188  pwd
+ 1189  ls
+ 1190  ls /vagrant
+ 1191  pwd
+ 1192  ls
+ 1193  cd pki
+ 1194  ls
+ 1195  ls -lR
+ 1196  pwd
+ 1197  tar cvf pki.tar pki
+ 1198  cp pki.tar /vagrant
+ 1199  ls
+ 1200  cd pki
+ 1201  ls
+ 1202  rm -rf *
+ 1203  cd ..
+ 1204  rm -rf pki
+ 1205  python
+ 1206  pwd
+ 1207  python-venv
+ 1208  venv
+ 1209  ls
+ 1210  virtualenv venv2
+ 1211  pwd
+ 1212  ls
+ 1213  ls -l
+ 1214  source venv2/bin/activate
+ 1215  pwd
+ 1216  pip install rasterio
+ 1217  ls
+ 1218  cd git
+ 1219  ls
+ 1220  cd kilpopas/
+ 1221  ls
+ 1222  cd jekyll-sites/
+ 1223  ls
+ 1224  cd lentuvat.github.io
+ 1225  ls
+ 1226  cd ..
+ 1227  cd lentuvat-source/
+ 1228  ls
+ 1229  vi README.md 
+ 1230  history
+ 1231  ls
+ 1232  git remote -v
+ 1233  ls
+ 1234  cd ..
+ 1235  ls
+ 1236  cd lentuvat.github.io
+ 1237  ls
+ 1238  git remote -v
+ 1239  git branch
+ 1240  pwd
+ 1241  git remove -v
+ 1242  git remote -v
+ 1243  vagrant halt
+ 1244  ls
+ 1245  cd git/
+ 1246  cd kilpopas/
+ 1247  ls
+ 1248  cd jekyll-sites/
+ 1249  ls
+ 1250  cd lentuvat-source/
+ 1251  jekyll build
+ 1252  bundle clean
+ 1253  bundle clean --force
+ 1254  sudo bundle clean --force
+ 1255  jekyll build
+ 1256  history|grep jekyll
+ 1257  bundle exec jekyll serve --host 192.168.33.10
+ 1258  cd git/kilpopas/jekyll-sites/lentuvat-source/
+ 1259  bundle exec jekyll serve --host 192.168.33.10
+ 1260  cd git/kilpopas/jekyll-sites/lentuvat-source/
+ 1261  bundle exec jekyll serve --host 192.168.33.10
+ 1262  bg
+ 1263  curl http://192.168.33.10:4000
+ 1264  fg
+ 1265  ipconfig
+ 1266  ifconfig
+ 1267  curl http://192.168.33.10:4000
+ 1268  sudo service iptables stop
+ 1269  cd git/kilpopas/jekyll-sites/lentuvat-source/
+ 1270  bundle exec jekyll serve --host 192.168.33.10
+ 1271  bg
+ 1272  sudo uwf status
+ 1273  sudo ufw status
+ 1274  fg
+ 1275  bundle exec jekyll serve --host 0.0.0.0
+ 1276  jekyll build
+ 1277  cd _site/
+ 1278  more index.html 
+ 1279  pwd
+ 1280  cd ..
+ 1281  bundle exec jekyll build
+ 1282  bundle exec jekyll serve --host 0.0.0.0
+ 1283  bundle exec jekyll build
+ 1284  sudo apt install git p7zip-full python3-pip python3-wxgtk4.0 grub2-common grub-pc-bin wimtools
+ 1285  sudo su
+ 1286  vagrant halt
+ 1287  sudo su -
+ 1288  ls
+ 1289  ls /vagrant
+ 1290  mv /vagrant/woeusb-5.2.4.bash .
+ 1291  chmod u+x woeusb-5.2.4.bash 
+ 1292  df -h
+ 1293  sudo su -
+ 1294  df -h
+ 1295  sudo su -
+ 1296  ls
+ 1297  chmod u+x woeusb-5.2.4.bash 
+ 1298  ./woeusb-5.2.4.bash 
+ 1299  df -h
+ 1300  fdisk -l
+ 1301  sudo fdisk -l
+ 1302  df -h
+ 1303  sudo woeusb --device /vagrant/Win10_21H2_English_x64.iso /dev/sda --target-filesystem ntfs
+ 1304  ls
+ 1305  sudo woeusb-5.2.4.bash --device /vagrant/Win10_21H2_English_x64.iso /dev/sda --target-filesystem ntfs
+ 1306  sudo ./woeusb-5.2.4.bash --device /vagrant/Win10_21H2_English_x64.iso /dev/sda --target-filesystem ntfs
+ 1307  ls
+ 1308  cd git
+ 1309  ls
+ 1310  cd kilpopas/
+ 1311  ls
+ 1312  cd jekyll-sites/
+ 1313  ls
+ 1314  cd lentuvat-source/
+ 1315  history|grep jekyll
+ 1316  ifconfig
+ 1317  bundle exec jekyll serve --host 0.0.0.0
+ 1318  ls
+ 1319  ls _posts/
+ 1320  cd _posts/
+ 1321  ls
+ 1322  ls -lrt
+ 1323  cd ..
+ 1324  ls
+ 1325  ls _pages/
+ 1326  ls
+ 1327  ls _pages
+ 1328  ls
+ 1329  cd _posts/
+ 1330  touch 2022-06-01-avattu.markdown 
+ 1331  ls -l
+ 1332  cd ..
+ 1333  bundle exec jekyll serve --host 0.0.0.0
+ 1334  history|grep jekyll
+ 1335  history
+ 1336  cd ..
+ 1337  cd lentuvat.github.io
+ 1338  ls
+ 1339  vi index.html 
+ 1340  pwd
+ 1341  history|grep lentuvat.fi
+ 1342  history
+ 1343  history|more
+ 1344  cd ..
+ 1345  cd lentuvat-source/
+ 1346  bundle exec jekyll build
+ 1347  history|more
+ 1348  cd ..
+ 1349  cd lentuvat.github.io
+ 1350  git remote -v
+ 1351  git pull
+ 1352  ls
+ 1353  cat /etc/hosts
+ 1354  ls
+ 1355  vi README.md 
+ 1356  git remote -v
+ 1357  git branch
+ 1358  git log
+ 1359  git remote -v
+ 1360  ls
+ 1361  ls -la
+ 1362  cd .git
+ 1363  ls
+ 1364  cd ..
+ 1365  git remote -v
+ 1366  ls ~/.ssh/
+ 1367  python3 -m venv venv
+ 1368  sudo apt-get install python3-venv
+ 1369  python3 -m venv venv
+ 1370  source venv/bin/activate
+ 1371  sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
+ 1372  python3 -m pip install vcd-cli
+ 1373  python3 -m pip install pip --upgrade
+ 1374  python3 -m pip install vcd-cli
+ 1375  vcd
+ 1376  vcd login
+ 1377  vcd profile
+ 1378  vcd profile info
+ 1379  vcd profile extensions
+ 1380  vcd login vcd1.se-east-1.sc.tietoevry.com
+ 1381  vcd login vcd1.se-east-1.sc.tietoevry.com SOVCLDLAB4 kilpopa
+ 1382  vcd login vcd1a.se-east-1.sc.tietoevry.com SOVCLDLAB4 kilpopa
+ 1383  vcd 
+ 1384  vcd network
+ 1385  vcd network list
+ 1386  vcd vdc
+ 1387  vcd vdc list
+ 1388  vcd vdc use SOVCLDLABSE-vdc1
+ 1389  vcd vdc list
+ 1390  vcd
+ 1391  vcd vm list
+ 1392  vcd vm 
+ 1393  vcd vm  list
+ 1394  vcd vm  -h
+ 1395  vcd
+ 1396  vcd vapp
+ 1397  vcd vapp list
+ 1398  vcd
+ 1399  vcd org list
+ 1400  vcd vc list
+ 1401  vcd vm
+ 1402  pwd
+ 1403  python3 -m install container-service-extension
+ 1404  python3 -m pip install container-service-extension
+ 1405  python3 -m pip install container-service-extension --pre --upgrade
+ 1406  vi ~/.vcd-cli/profiles.yaml 
+ 1407  vcd cse
+ 1408  vi ~/.vcd-cli/profiles.yaml 
+ 1409  python3 -m pip uninstall
+ 1410  python3 -m pip uninstall container-service-extension
+ 1411  vi ~/.vcd-cli/profiles.yaml 
+ 1412  vcd cse
+ 1413  python3 -m pip install container-service-extension --pre --upgrade
+ 1414  vcd cse
+ 1415  deactivate 
+ 1416  source venv/bin/activate
+ 1417  vcd cse
+ 1418  vcd --version
+ 1419  vcd version
+ 1420  vcd profile extension list
+ 1421  pip
+ 1422  pip --version
+ 1423  pip install container-service-extension
+ 1424  vcd logout
+ 1425  history
+ 1426  vcd login vcd1a.se-east-1.sc.tietoevry.com system kilpopa
+ 1427  vcd login vcd1a.se-east-1.sc.tietoevry.com SOVCLDLAB4 kilpopa
+ 1428  vcd cse
+ 1429  cd git
+ 1430  cd kilpopas/
+ 1431  cd jekyll-sites/
+ 1432  ls
+ 1433  cd lentuvat-source/
+ 1434  ls
+ 1435  cd _site/
+ 1436  ls
+ 1437  grep localhost *
+ 1438  grep lentuvat *
+ 1439  cd jekyll/
+ 1440  ls
+ 1441  cd ..
+ 1442  cat sitemap.xml 
+ 1443  history
+ 1444  history|grep lentuvat
+ 1445  cd ..
+ 1446  grep lentuvat *
+ 1447  history|grep git
+ 1448  cd ..
+ 1449  cd lentuvat.github.io
+ 1450  ls
+ 1451  git status
+ 1452  pwd
+ 1453  history|grep cp
+ 1454  history
+ 1455  cd ..
+ 1456  cd lentuvat-source/
+ 1457  history
+ 1458  jekyll build
+ 1459  cd git/kilpopas/
+ 1460  ls
+ 1461  cd jekyll-sites/
+ 1462  ls
+ 1463  cd lentuvat-source/
+ 1464  history|grep jekyll
+ 1465  bundle exec jekyll serve --host 0.0.0.0
+ 1466  history|grep jekyll
+ 1467  cd git/kilpopas/jekyll-sites/lentuvat-source/
+ 1468  ls
+ 1469  more _config.yml 
+ 1470  ls
+ 1471  ls _posts
+ 1472  cd _posts
+ 1473  ls
+ 1474  more 2021-11-01-suljettu.markdown
+ 1475  cd ..
+ 1476  ls
+ 1477  cd _old_posts/
+ 1478  ls
+ 1479  cd ..
+ 1480  cd _posts_2022/
+ 1481  ls
+ 1482  cat 2022-06-01-avattu.markdown
+ 1483  pwd
+ 1484  cd ..
+ 1485  mkdir _posts_2023
+ 1486  cd _posts_2023
+ 1487  cp ../_posts_2022/* .
+ 1488  ls -lrt
+ 1489  mv 2022-06-01-metsastys.markdown 2023-06-01-metsastys.markdown
+ 1490  mv 2022-06-01-kalastus.markdown 2023-06-01-kalastus.markdown
+ 1491  mv 2022-06-01-avattu.markdown 2023-06-01-avattu.markdown
+ 1492  vi *
+ 1493  ls
+ 1494  cd ..
+ 1495  ls
+ 1496  cd _posts
+ 1497  ls
+ 1498  cp ../_posts_2023/* .
+ 1499  ls
+ 1500  rm 2021-11-01-suljettu.markdown
+ 1501  history |grep suljettu
+ 1502  history
+ 1503  cd ..
+ 1504  grep suljettu 
+ 1505  grep suljettu  *
+ 1506  ls
+ 1507  cd _posts
+ 1508  ls
+ 1509  vi *
+ 1510  cd ..
+ 1511  history
+ 1512  history|grep jekyll
+ 1513  history
+ 1514  bundle exec jekyll build
+ 1515  ls
+ 1516  cd _site
+ 1517  ls
+ 1518  cd ..
+ 1519  history|grep jekyll
+ 1520  bundle exec jekyll serve --host 0.0.0.0
+ 1521  history|grep pi
+ 1522  cat /etc/hosts
+ 1523  history|grep ssh
+ 1524  ls
+ 1525  history|grep pi
+ 1526  history
+ 1527  ls ~/.ssh
+ 1528  ls
+ 1529  cd git
+ 1530  ls
+ 1531  cd kilpopas/
+ 1532  ls
+ 1533  cd jekyll-sites/
+ 1534  ls
+ 1535  cd lentuvat-source/
+ 1536  ls
+ 1537  more README.md 
+ 1538  ls
+ 1539  history|grep jekyll
+ 1540  pwd
+ 1541  history
+ 1542  cd git/kilpopas/jekyll-sites/
+ 1543  ls
+ 1544  cd lentuvat-source/
+ 1545  ls
+ 1546  more _config.yml
+ 1547  git remote -v
+ 1548  pwd
+ 1549  bundle install
+ 1550  history
+ 1551  mv _site _site.old
+ 1552  bundle exec jekyll build
+ 1553  bundle install
+ 1554  bundle exec jekyll build
+ 1555  cd _site
+ 1556  ls
+ 1557  history
+ 1558  bundle exec jekyll serve --host 0.0.0.0
+ 1559  bg
+ 1560  ifconfig
+ 1561  cd ..
+ 1562  bundle exec jekyll build
+ 1563  ls _site
+ 1564  cd _site
+ 1565  ls _site
+ 1566  cd ..
+ 1567  rm -r _site
+ 1568  fg
+ 1569  rm -rf _site
+ 1570  bundle exec jekyll build
+ 1571  ls _site
+ 1572  cd _site
+ 1573  ls
+ 1574  cd fi
+ 1575  ls
+ 1576  cd ..
+ 1577  more _config
+ 1578  ls
+ 1579  more _config.yml 
+ 1580  rm -rf _site
+ 1581  cd _site
+ 1582  ls
+ 1583  cd ..
+ 1584  rm -rf _site
+ 1585  vi _config.yml 
+ 1586  bundle exec jekyll build
+ 1587  ls _site
+ 1588  cd _site
+ 1589  bundle exec jekyll serve --host 0.0.0.0
+ 1590  cd ..
+ 1591  rm -rf _site
+ 1592  bundle exec jekyll build
+ 1593  cd _site/fi
+ 1594  more index.html 
+ 1595  bundle exec jekyll serve --host 0.0.0.0
+ 1596  ls
+ 1597  cd ..
+ 1598  rm -rf _site
+ 1599  bundle exec jekyll build
+ 1600  cd _site
+ 1601  ls
+ 1602  bundle exec jekyll serve --host 0.0.0.0
+ 1603  cd ..
+ 1604  rm -rf _site
+ 1605  bundle exec jekyll build
+ 1606  rm -rf _site
+ 1607  bundle exec jekyll build
+ 1608  cd _site
+ 1609  bundle exec jekyll serve --host 0.0.0.0
+ 1610  cd ..
+ 1611  rm -rf _site
+ 1612  bundle exec jekyll build
+ 1613  cd _site
+ 1614  bundle exec jekyll serve --host 0.0.0.0
+ 1615  cd ..
+ 1616  rm -rf _site
+ 1617  bundle exec jekyll build
+ 1618  cd _site
+ 1619  bundle exec jekyll serve --host 0.0.0.0
+ 1620  cd ..
+ 1621  rm -rf _site
+ 1622  bundle exec jekyll build
+ 1623  cd _site
+ 1624  bundle exec jekyll serve --host 0.0.0.0
+ 1625  cd git
+ 1626  cd kilpopas/
+ 1627  ls
+ 1628  cd jekyll-sites/
+ 1629  ls
+ 1630  cd lentuvat-source/
+ 1631  cd _site
+ 1632  history
+ 1633  ls
+ 1634  cd ..
+ 1635  rm -rf _site
+ 1636  bundle exec jekyll serve --host 0.0.0.0
+ 1637  rm -rf _site
+ 1638  bundle exec jekyll serve --host 0.0.0.0
+ 1639  rm -rf _site
+ 1640  bundle exec jekyll serve --host 0.0.0.0
+ 1641  ls
+ 1642  more README.md 
+ 1643  cd _site
+ 1644  ls
+ 1645  cd ..
+ 1646  cd lentuvat.github.io
+ 1647  git branch
+ 1648  history|grpe git
+ 1649  history|grep git
+ 1650  ls
+ 1651  cp -pR ../lentuvat-source/_site/* .
+ 1652  git status
+ 1653  git add .
+ 1654  git status
+ 1655  git commit -m "english translations added"
+ 1656  history|grep pi
+ 1657  history
+ 1658  history|more
+ 1659  history
+ 1660  cd l
+ 1661  ls
+ 1662  cd git/kilpopas/jekyll-sites/lentuvat.github.io
+ 1663  git status
+ 1664  git branch
+ 1665  ls
+ 1666  cd .
+ 1667  cd ..
+ 1668  cd lentuvat-source/
+ 1669  ls
+ 1670  git status
+ 1671  git remote -v
+ 1672  history
+ 1673  cd _posts
+ 1674  ls
+ 1675  cd ..
+ 1676  ls
+ 1677  cd _posts_2023
+ 1678  ls
+ 1679  ls ../_posts
+ 1680  cd ..
+ 1681  cd _old_posts/
+ 1682  ls
+ 1683  mkdir 2021
+ 1684  mv * 2021
+ 1685  ls
+ 1686  mkdir 2023
+ 1687  mv ../_posts_2023/* 2023
+ 1688  ls 2023
+ 1689  ls -lR
+ 1690  ls
+ 1691  mv 2023 2023_avattu
+ 1692  mkdir 2023_suljettu
+ 1693  cp 2021/2021-2021-11-01-suljettu.markdown 2023_suljettu
+ 1694  cp 2021/2021-11-01-suljettu.markdown 2023_suljettu
+ 1695  cd 2023_suljettu/
+ 1696  ls
+ 1697  mv 2021-11-01-suljettu.markdown 2023-11-02-suljettu.markdown
+ 1698  vi 2023-11-02-suljettu.markdown 
+ 1699  cd ..
+ 1700  ls
+ 1701  cd pos
+ 1702  cd _posts
+ 1703  ls
+ 1704  mv * ../_old_posts/2023_avattu/
+ 1705  ls
+ 1706  cp -p ../_old_posts/2023_suljettu/* .
+ 1707  ls
+ 1708  cd ..
+ 1709  history
+ 1710  bundle exec jekyll serve --host 0.0.0.0
+ 1711  pwd
+ 1712  ls
+ 1713  rm -rf _site.old/
+ 1714  mv _site _site.old
+ 1715  cd _site.old/
+ 1716  ls
+ 1717  cd ..
+ 1718  ls
+ 1719  ls -lR
+ 1720  cd _i18n/
+ 1721  ls -lR
+ 1722  cd ..
+ 1723  grep -R _posts *
+ 1724  grep -R _18 *
+ 1725  grep -R _i18 *
+ 1726  ls
+ 1727  git status
+ 1728  cd _i18n/
+ 1729  ls
+ 1730  cd fi
+ 1731  ls
+ 1732  cd _posts/
+ 1733  ls
+ 1734  rm *
+ 1735  cp ~/git/kilpopas/jekyll-sites/lentuvat-source/_old_posts/fi/2023_avattu .
+ 1736  ls
+ 1737  cp ~/git/kilpopas/jekyll-sites/lentuvat-source/_old_posts/fi/2023_avattu/* .
+ 1738  ls
+ 1739  pwd
+ 1740  cd ..
+ 1741  cd _site
+ 1742  ls
+ 1743  ls -lR
+ 1744  more index.html 
+ 1745  cd ..
+ 1746  ls
+ 1747  history
+ 1748  rm -rf _site
+ 1749  bundle exec jekyll build
+ 1750  bundle exec jekyll serve --host 0.0.0.0
+ 1751  ls
+ 1752  cd _i18n/
+ 1753  ls
+ 1754  cd en/
+ 1755  ls
+ 1756  cd _posts/
+ 1757  ls
+ 1758  rm *
+ 1759  cp ~/git/kilpopas/jekyll-sites/lentuvat-source/_old_posts/en/2023_open/* .
+ 1760  cd ..
+ 1761  cd _site
+ 1762  ls
+ 1763  more index.html 
+ 1764  vi index.html 
+ 1765  cd git
+ 1766  cd kilpopas/
+ 1767  ls
+ 1768  cd jekyll-sites/
+ 1769  ls
+ 1770  cd lentuvat-source/
+ 1771  ls
+ 1772  cd _posts
+ 1773  ls
+ 1774  ls -lrt
+ 1775  mkdir fit
+ 1776  ls
+ 1777  mv fit fi
+ 1778  ls
+ 1779  rm -rf _fi
+ 1780  rm -rf fi
+ 1781  cd ..
+ 1782  ls
+ 1783  cd _old_posts/
+ 1784  ls
+ 1785  mkdir fi
+ 1786  mv * fi
+ 1787  mkdir en
+ 1788  cp ../_i18n/en/_posts/* en
+ 1789  ls en
+ 1790  cd en
+ 1791  ls
+ 1792  mkdir 2023
+ 1793  mv * 2023
+ 1794  mv 2023 2023_open
+ 1795  mkdir 2023_closed
+ 1796  cd 2023_closed/
+ 1797  cp ../../fi/2023_suljettu/2023-11-02-suljettu.markdown .
+ 1798  ls
+ 1799  vi 2023-11-02-suljettu.markdown
+ 1800  ls
+ 1801  cd ..
+ 1802  cd _old_posts/
+ 1803  ls
+ 1804  cd en/
+ 1805  ls
+ 1806  cd 2023_open/
+ 1807  ls
+ 1808  vi *
+ 1809  cd ..
+ 1810  ls
+ 1811  cd _i18n/
+ 1812  ls
+ 1813  cd fi/
+ 1814  ls
+ 1815  cd _posts/
+ 1816  ls
+ 1817  cp * ~/git/kilpopas/jekyll-sites/lentuvat-source/_old_posts/fi/2023_avattu/
+ 1818  rm *
+ 1819  cp ~/git/kilpopas/jekyll-sites/lentuvat-source/_old_posts/fi/2023_suljettu/2023-11-02-suljettu.markdown .
+ 1820  ls
+ 1821  mv 2023-11-02-suljettuvi 2023-11-02-suljettu.markdown 
+ 1822  vi 2023-11-02-suljettu.markdown 
+ 1823  cd ..
+ 1824  cd en/
+ 1825  ls
+ 1826  cd _posts/
+ 1827  ls
+ 1828  cp * ~/git/kilpopas/jekyll-sites/lentuvat-source/_old_posts/en/2023_open/
+ 1829  rm *
+ 1830  cp ~/git/kilpopas/jekyll-sites/lentuvat-source/_old_posts/en/2023_closed/2023-11-02-suljettu.markdown  .
+ 1831  vi 2023-11-02-suljettu.markdown 
+ 1832  cd ..
+ 1833  ls
+ 1834  historyu
+ 1835  history
+ 1836  bundle exec jekyll serve --host 0.0.0.0
+ 1837  ls
+ 1838  cd _i18n/
+ 1839  ls
+ 1840  more fi.yml 
+ 1841  ls
+ 1842  cd fi
+ 1843  ls
+ 1844  more home.md 
+ 1845  ls
+ 1846  cd _posts/
+ 1847  ls
+ 1848  cat 2023-11-02-suljettu.markdown 
+ 1849  cd ..
+ 1850  cd .
+ 1851  cd ..
+ 1852  cd _posts
+ 1853  ls
+ 1854  cd ..
+ 1855  cd i18
+ 1856  ls
+ 1857  cd _i18n/
+ 1858  ls
+ 1859  grep -R _posts *
+ 1860  ls
+ 1861  cd fi
+ 1862  ls
+ 1863  cd _posts/
+ 1864  ls
+ 1865  cd ..
+ 1866  pwd
+ 1867  cd
+ 1868  cd git
+ 1869  cd kilpopas/
+ 1870  cd jekyll-sites/
+ 1871  cd lentuvat-source/
+ 1872  cd _old_posts/
+ 1873  ls
+ 1874  cd fi
+ 1875  ls
+ 1876  cd 2023_ava
+ 1877  cd 2023_avattu/
+ 1878  ls
+ 1879  pwd
+ 1880  history
+ 1881  cd gt
+ 1882  cd git
+ 1883  cd kilpopas/
+ 1884  cd jekyll-sites/
+ 1885  ls
+ 1886  cd lentuvat-source/
+ 1887  bundle exec jekyll serve --host 0.0.0.0
+ 1888  ping codeload.github.com
+ 1889  bundle exec jekyll serve --host 0.0.0.0
+ 1890  bg
+ 1891  pwd
+ 1892  ls
+ 1893  fg
+ 1894  bundle exec jekyll serve --host 0.0.0.0
+ 1895  pwd
+ 1896  history > pk
