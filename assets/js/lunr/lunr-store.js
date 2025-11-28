@@ -1,13 +1,7 @@
 var store = [{
-        "title": "Kesäkausi 2025 nyt varattavissa.",
-        "excerpt":"Nyt vielä hyvin vapaita viikkoja, vuokraa nyt rantamökki Kuhmosta Lentua järven rannalta!    ","categories": ["jekyll","update"],
+        "title": "Ensi kausi nyt varattavissa",
+        "excerpt":"Otamme vastaan varauksia ensi kaudelle. Pidämme mökit kiinni nyt talvikaudella ja avaamme jälleen keväällä 2026 toukokuun alussa.    ","categories": ["jekyll","update"],
         "tags": [],
-        "url": "/jekyll/update/avattu/",
-        "teaser": null
-      },{
-        "title": "Kalastusluvat",
-        "excerpt":"Meidän kautta saat paikallisen kalastuskunnan kalastusluvat Lentualle sekä Nivan koskialueelle.    ","categories": ["jekyll","update"],
-        "tags": [],
-        "url": "/jekyll/update/kalastus/",
+        "url": "/jekyll/update/suljettu/",
         "teaser": null
       }]
