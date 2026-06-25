@@ -1,7 +1,13 @@
 var store = [{
-        "title": "Next season accomodation reservations",
-        "excerpt":"We are now closed for the winter time and taking reservations for next season that opens at May 2026.    ","categories": ["jekyll","update"],
+        "title": "Summer 2026 open.",
+        "excerpt":"Now it is good time to reserve very nice accomodation at cottages by the lake!    ","categories": ["jekyll","update"],
         "tags": [],
-        "url": "/en/jekyll/update/suljettu/",
+        "url": "/en/jekyll/update/avattu/",
+        "teaser": null
+      },{
+        "title": "Kalastusluvat",
+        "excerpt":"From us you can also get fishing permits to the local Lentua area and to the Niva area.    ","categories": ["jekyll","update"],
+        "tags": [],
+        "url": "/en/jekyll/update/kalastus/",
         "teaser": null
       }]
